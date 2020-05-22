@@ -1,0 +1,89 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+    color: #A4A400; 
+    font-size: 22pt;
+    font-weight: bold;
+    margin: 0 0.25em;
+}
+h2{
+    color: #A4A400;
+    font-family: Lucida Sans Unicode, Helvetica, Arial;
+    font-size: 18pt;
+    text-decoration: underline;
+    margin: 0 0.25em;
+}
+a:visited{
+    color: #A4A400;
+}
+.h2{
+    background-color: #F0F0F0;
+    font-size: 18pt;
+    text-decoration: underline;
+    margin: 0 0.25em;
+}
+.h1{
+    background-color: #F0F0F0;
+    font-size: 18pt;
+    text-decoration: underline;
+    margin: 0 0.25em;
+}
+.comment{
+ background-color: #fff670;
+ margin-left: 10%;
+ margin-right: 10%;
+}
+.footer{
+text-align: right;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    background: white;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia,Garamond;
+    background-image: url("silverware.jpg"); 
+}
+a{
+	color: #A4A400;
+}
+
+ul{
+	list-style-image: url("/Recipe/pie_icon.gif");
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  left: 10%;
+}
+.replacable{
+	visibility: hidden;
+	position: relative;
+}
+.replacable:after{
+	visibility: visible;
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "pie!";
+}
+.footer{
+	float: left;
+}
+img{
+	margin-top: 1%;
+}
