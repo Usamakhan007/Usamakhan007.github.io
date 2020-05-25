@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="payment.css">   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body id="paymentform">
+
+
+<div class="container">
+    <h1> Payment Details </h1>
+    <br>
+    <h4>Credit Card</h4>
+  <form>
+    <label class="radio-inline">
+      <input type="radio" name="optradio" checked>MasterCard 
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">VisaCard
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">AmericanExpress
+    </label>
+      <br><br>
+      
+      <label for="name">Exp Month:</label><br>
+     <input placeholder="Your name" id="name" type="text" required autofocus>
+     <br><br>
+     <label for="email">Card Holder Name:</label><br>
+     <input placeholder="Your Email Address" id="email" type="email" tabindex="2" required>
+           <br><br>
+      
+     <label for="phone">Exp Year:</label><br>
+     <input placeholder="02/15"  id="phone" type="tel" tabindex="3" required>
+           <br><br>
+     <label for="ssn">Credit card number:</label><br>
+     <input placeholder="5968 2584 xxxx xxxx" id="ssn" type="text" tabindex="4" required>
+           <br><br>
+         <label for="ssn">CVV number:</label><br>
+     <input placeholder="239" id="ssn" type="text" tabindex="4" required>
+           <br><br>
+      
+        <input type="checkbox" name="vehicle3" value="Boat" >
+      <label for="ssn">I would like to keep visiting :</label><br>
+     
+      <input type="submit" value="CheckOut Now "> 
+      
+      
+  </form>
+</div>
+
+    
+
+    
+</body>
+</html>

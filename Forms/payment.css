@@ -1,0 +1,15 @@
+
+body{
+    box-sizing: border-box;
+    background-color:  azure;
+}
+#paymentform{
+    
+
+    background-color: azure;
+    width: 50%;
+    height: 600px;
+    margin: 0px auto;
+    box-shadow: 10px 10px 10px 10px gray;
+    
+}

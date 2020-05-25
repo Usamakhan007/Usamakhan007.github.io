@@ -1,0 +1,68 @@
+
+*{
+    
+   box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+body{
+    
+    width: 100%;
+    background-color: azure;
+}
+
+#personal {
+    
+    display: block;
+    position: relative;
+    background-color: azure;
+    width: 50%;
+    height: 600px;
+    margin: 40px auto;
+    box-shadow: 10px 10px 10px 10px gray;
+    
+}
+#personal input, label{
+    
+    position: relative;
+    width: 20em;
+    font-size: 1em;
+    top: 50px;
+    display: block;
+    margin-top: 30px; 
+    left: 10%;
+    
+    
+}
+h1{
+    
+    position: relative;
+    top: 30px;
+    font-size: 2em;
+    left: 20px;
+}
+
+.clear{
+    
+    clear: both;
+}
+#paymentform{
+    
+        display: block;
+    position: relative;
+    background-color: azure;
+    width: 50%;
+    height: 600px;
+    margin: 40px auto;
+    box-shadow: 10px 10px 10px 10px gray;
+    
+}
+
+
+    
+
+
+
+
