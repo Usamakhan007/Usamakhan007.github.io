@@ -1,0 +1,11 @@
+For this Lab Assignment W1D4, do the following tasks:
+
+1. Implement code for a web page the displays the attached Web Form (file named, webform1.PNG).
+
+2. In your html form markup code from task 1, include a feature such that the User can only submit the form if the Password field is at least 10 characters in length and contain at least one number and one uppercase and lowercase letter).
+
+3. Add to your above web form, an additional text input field, where the user must only enter a website url, and they must enter it beginning with either the string, "http://" or "https://".
+
+4. Implement code for another web page that displays as shown in the attached image including the navbar and the Web Form (file named, Webform2.PNG).  Make your page responsive so it becomes a single column on smaller screens.
+
+5. Post both pages to your Github repository and include links on your home page.
