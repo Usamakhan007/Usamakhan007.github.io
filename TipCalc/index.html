@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>AboutMe!</title>
+    <style>
+        *{ 
+            width: 100%;
+            line-height: 1;
+            padding: 0px;
+            margin: 0px;  
+        }
+        div {
+            position: relative;
+            background-color: ghostwhite;
+            border: 2px solid gray;
+            box-shadow: 5px 5px 5px 5px gray;
+            top: 50px;
+            width: 30%;
+            margin: 0 auto;
+            height: 400px;
+            padding: 20px;
+            
+              font-weight: bold;
+        }
+        [type="text"],[type="number"], [type="submit"]{
+            
+             height: 2em;
+             width: 300px;     
+        }
+    </style>
+	<script>
+    
+    
+    function calc(){
+        
+    var total = parseFloat(document.getElementById("bill").value);
+    var tip   = parseFloat(document.getElementById("tip").value);
+    var people = document.getElementById("people").value;
+    
+    
+  
+    
+            
+             var totalBill = total + (total/100)*tip;  //Full Bill with Tip 115
+             var totalTip =  (total/100)*tip;
+             var perPersonBill =  totalBill/people;  // 50
+             var perPersonTip = totalTip/people;
+             
+        
+        
+        if(people>=1 ){
+                 
+            var display = document.getElementById("rtotal").value = perPersonBill.toFixed(2);
+            var display = document.getElementById("rtip").value = perPersonTip.toFixed(2);
+            
+
+        }
+    } 
+   
+    </script>
+
+    
+    </head>
+<body>
+
+
+    <div>
+    
+    <label for="bill">  Total Bill : </label><br>
+    <input type="number" id="bill" placeholder="Enter total bill"> <br><br>
+    
+    <label for="tip">  Tip  : </label> <br>
+    <input type="number" id="tip" placeholder="15%"> <br><br>
+        
+    <label for="people">  Number of people : </label> <br>
+    <input type="number" id="people" placeholder=" "> <br><br>
+        
+     <label for="submit">  </label> <br>
+    <input type="submit" onclick="calc();" value="Check total Bill">  <br><br>
+    
+    <label for="rtotal">  Total Bill/ Person: </label> <br><br>
+    <input type="text" id="rtotal" placeholder=" "> <br><br>
+        
+    <label for="rtip">  Total tip/Person : </label> <br><br>
+    <input type="text" id="rtip" placeholder=" "> <br><br>
+    </div>
+
+</body>
+</html>

@@ -3,18 +3,53 @@
 <html lang="en">
 <head>  
 <meta charset= "utf-8"/>
-
+<style>
+    body{
+    
+      width: 100%;
+        padding: 0px;
+        margin: 0px;
+        line-height: 1em;
+        box-sizing: border-box;
+    }
+    #me{
+        margin-top: 20px;
+        position: relative;
+        padding: 20px 0 0 100px;
+        left: 25%;
+        background-color: ghostwhite;
+        box-shadow: 5px 5px 5px 5px grey;
+        height: 100%;
+        width: 50%;
+             line-height: 2em;
+    }    
+    #pro{
+      
+        border-radius:10%;
+        width: 150px;
+        height: 200px;
+  
+    }
+     li a:hover{
+        display: block;
+        width: 20%;
+        background-color: greenyellow;
+        transform: scale(2,2);
+        
+    }    
+    
+</style>
 <title>About Me!</title>
 </head>
 
 <body>
 
 
-<div>
+<div id="me">
 
-  <img src="https://github.com/Usamakhan007/Usamakhan007.github.io/blob/master/Khan.jpg?raw=true" style="border-radius:50%;" width = 200 height = 200 alt="profile pic"/>
+  <img id="pro" src="https://github.com/Usamakhan007/Usamakhan007.github.io/blob/master/Khan.jpg?raw=true" alt="profile pic"/>
 
-  <h1> Muhammad Usama </h1>
+  <h2> Muhammad Usama </h2>
 
 
 <ul>
@@ -29,9 +64,10 @@
 <li>  Lesson 2 </li>
 <li>  Lesson 3 </li>
 </ul>
-</div>
+
 <a href="https://validator.w3.org/check/referer"> <img
 			src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
 			alt="html validator"/></a>
-</body>
+</div>
+    </body>
 </html>

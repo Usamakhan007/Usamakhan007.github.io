@@ -26,13 +26,15 @@ body
 #ContentBox
 {
 	margin-left: auto;
-        margin-right: auto;
+    margin-right: auto;
 	width: 800px;
 	border: 4px solid grey;
 	border-radius: 20px;
 	position: relative;	
 	overflow: hidden;
 }
+
+
 
 #Overview
 {
@@ -41,6 +43,7 @@ body
     background-color: #A2B964;
 }
 
+
 #TextMain
 {
     font-family: Arial, sans-serif;
@@ -48,20 +51,6 @@ body
     padding-top: 0px;
 	font-size: 8pt;
 }
-
-#CommentsSection
-{
-    width:550px;
-    position:relative;
-    float:left;
-}
-
-.BoldList
-{
-	font-weight: bold;
-    padding-top:5px;
-}
-
 
 #Rotten33
 {
@@ -73,6 +62,29 @@ body
     vertical-align: bottom;
 	
 }
+
+
+
+
+
+
+.BoldList
+{
+	font-weight: bold;
+    padding-top:5px;
+}
+
+
+
+#CommentsSection
+{
+    width:550px;
+    position:relative;
+    float:left;
+}
+
+
+
 
 #Rotten33 img
 {
