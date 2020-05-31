@@ -8,7 +8,8 @@
             width: 100%;
             line-height: 1;
             padding: 0px;
-            margin: 0px;  
+            margin: 0px;
+            background-color: ghostwhite;
         }
         div {
             position: relative;
@@ -18,15 +19,23 @@
             top: 50px;
             width: 30%;
             margin: 0 auto;
-            height: 400px;
+            height: 550px;
             padding: 20px;
+          
             
               font-weight: bold;
         }
         [type="text"],[type="number"], [type="submit"]{
             
              height: 2em;
-             width: 300px;     
+             width: 300px;
+             
+        }
+        img{
+            
+            width: 20%;
+            height: 15%;
+            margin: 0 auto;
         }
     </style>
 	<script>
@@ -37,20 +46,12 @@
     var total = parseFloat(document.getElementById("bill").value);
     var tip   = parseFloat(document.getElementById("tip").value);
     var people = document.getElementById("people").value;
-    
-    
-  
-    
-            
+        
              var totalBill = total + (total/100)*tip;  //Full Bill with Tip 115
              var totalTip =  (total/100)*tip;
              var perPersonBill =  totalBill/people;  // 50
              var perPersonTip = totalTip/people;
-             
-        
-        
         if(people>=1 ){
-                 
             var display = document.getElementById("rtotal").value = perPersonBill.toFixed(2);
             var display = document.getElementById("rtip").value = perPersonTip.toFixed(2);
             
@@ -64,9 +65,11 @@
     </head>
 <body>
 
-
+   
     <div>
-    
+         <H3>TIP CALCULATOR </H3><br><br>
+        
+     <img src="http://mumstudents.org/cs472/2019-03-RS/Lectures/js10/calc.jpg" alt="logo"> <br><br>
     <label for="bill">  Total Bill : </label><br>
     <input type="number" id="bill" placeholder="Enter total bill"> <br><br>
     
