@@ -1,0 +1,9 @@
+textarea, input[type*=button] {
+    display: block;
+}
+
+#container {
+    width: 500px;
+    margin: auto;
+    padding-top: 70px;
+}
