@@ -1,0 +1,84 @@
+body {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#userid {
+    width: 600px;
+    height: 50px;
+    border: 1px solid goldenrod;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    /* margin: auto; */
+    margin: 10px;
+}
+#loader {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: none;
+    padding-top: 150px;
+}
+#submit {
+    visibility: hidden;
+    display: block;
+}
+
+.template {
+    display: none;
+}
+#posts-container {
+    width: 800px;
+    margin: auto;
+}
+
+.post {
+    border: 1px solid gray;
+    width: 200px;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.post .title {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.body {
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.name {
+    text-align: left;
+    /* font-weight: bold; */
+    font-style: italic;
+    color: gray;
+    display: inline-block;
+    /* width: 30%; */
+    width: 100%;
+}
+.email {
+    text-align: right;
+    /* font-weight: bold; */
+    font-style: italic;
+    color: gray;
+    display: inline-block;
+    /* width: 65%; */
+    width: 100%;
+}
+
+#footer {
+    right: 0px;
+    bottom: 0px;
+    width: 100px;
+    position: fixed;
+}

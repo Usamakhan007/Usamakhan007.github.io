@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Lab 10</title>
+        <meta name="viewport" content="viewport-fit=cover, width=device-width, shrink-to-fit=no, initial-scale=1.0">
+        <meta name="description" content="Learn HTML" />
+        <meta name="keywords" content="HTML, CSS" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy -->
+        
+        
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
+        <link href="style.css" type="text/css" rel="stylesheet" />
+		<script src="script.js"></script>
+    </head>
+    <body>
+
+        <div
+            class="template"
+            id="template-comment">
+            <div class="name">name</div>
+            <div class="email">email</div>
+            <div class="body">Body</div>
+        </div>
+        
+        <div
+            class="template"
+            id="template-post">
+            <div class="author">
+                <div class="name">name</div>
+                <div class="email">email</div>
+            </div>
+
+            <div class="title">Title</div>
+            <div class="body">Body</div>
+
+            
+
+            <div class="comments-container">
+                <!-- <div class="comment"></div> -->
+                <a
+                    class="show-comments"
+                    href="#"> Show comments </a>
+            </div>
+        </div>
+        
+
+        <form>
+            <!-- <label for="userid">User Id:</label> -->
+            <input
+                type="number"
+                id="userid"
+                placeholder="Enter UserId and press enter/return"
+                required>
+            <input
+                type="submit"
+                id="submit">
+        </form>
+
+        <div
+            id="loader">
+            <img
+                alt="loader"
+                src="http://mumstudents.org/~rshrestha/ajax_feedback/loader.gif">
+        </div>
+
+        <div id="posts-container"></div>
+
+        <div id="footer">
+            <a href="https://validator.w3.org/check/referer"><img src="http://mumstudents.org/cs472/2013-09/images/w3c-html.png" alt="html validator"/></a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png" alt="css validator"/></a>
+			<a href="http://mumstudents.org/jscheck/referer.php"><img src="http://mumstudents.org/jscheck/jscheck-small.png" alt="js validator"/></a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Lab7</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="viewport-fit=cover, width=device-width, shrink-to-fit=no, initial-scale=1.0">
+		<meta name="description" content="Learn HTML" />
+		<meta name="keywords" content="HTML, CSS" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy -->
+		
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+		<div id="container">
+			Account Name:
+			<input
+				id="name"
+				name="name"
+				type="text"/>
+			<br/>
+			Deposite:
+			<input
+				id="deposit"
+				name="deposit"
+				type="number" />
+			<input
+				type="button"
+				id="btn"
+				onclick="onClick()"
+				value="Create new account" />
+			<textarea
+				id="ta"
+				rows="20"
+				cols="50"></textarea>
+		</div>
+	
+
+		<div id="validators">
+			
+			<a href="https://validator.w3.org/check/referer"> 
+				<img src="http://www.w3.org/Icons/valid-xhtml10" alt="Validate" /> 
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer"> 
+				<img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Validate" /> 
+			</a>
+		</div>
+
+	</body>
+</html>
