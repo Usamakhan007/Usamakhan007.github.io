@@ -1,23 +1,7 @@
-// use `jslint ascii.js && jshint ascii.js` for validation
-
-/*jshint strict:true */
-/*jshint esversion: 6 */
-/*jslint node: true */
-// see https://jshint.com/docs/options/#esversion
-
-
-/*global window */
-/*global document */
-/*global console */
-// SEE http://linterrors.com/js/a-was-used-before-it-was-defined#why-do-i-get-this-error-
-
-// /*jslint es6 */
-// // https://stackoverflow.com/a/36265255
-// DOES NOT WORK!
 
 "use strict";
 
-// const AccountModule = (function (window, document) {
+
 var AccountModule = (function (document) {
 
     function makeAccount(name, balance) {
@@ -34,9 +18,7 @@ var AccountModule = (function (document) {
         };
     }
 
-    var accountInfoList = [],
-        ta,
-        btn;
+    var accountInfoList = [], ta, btn;
 
     function getAccountInfoList() {
         console.log('getAccountInfoList');
@@ -46,9 +28,6 @@ var AccountModule = (function (document) {
         accountInfoList = list;
     }
 
-    // const AccountInfoListToString = ({ name, balance }) => (
-    //     `Account name: ${name} Balance: ${balance}`
-    // );
     function AccountInfoListToString(account) {
         var name = account.name,
             balance = account.balance;
@@ -85,7 +64,7 @@ var accountModule,
 function onReady() {
     accountModule = new AccountModule('ta', 'btn');
     console.log('init:accountModule', accountModule);
-    // accountInfoList = accountModule.getAccountInfoList();
+    
 }
 
 function onClick() {
