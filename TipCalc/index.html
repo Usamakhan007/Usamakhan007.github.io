@@ -1,93 +1,66 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8"/>
-	<title>AboutMe!</title>
-    <style>
-        *{ 
-            width: 100%;
-            line-height: 1;
-            padding: 0px;
-            margin: 0px;
-            background-color: ghostwhite;
-        }
-        div {
-            position: relative;
-            background-color: ghostwhite;
-            border: 2px solid gray;
-            box-shadow: 5px 5px 5px 5px gray;
-            top: 50px;
-            width: 30%;
-            margin: 0 auto;
-            height: 550px;
-            padding: 20px;
-          
-            
-              font-weight: bold;
-        }
-        [type="text"],[type="number"], [type="submit"]{
-            
-             height: 2em;
-             width: 300px;
-             
-        }
-        img{
-            
-            width: 20%;
-            height: 15%;
-            margin: 0 auto;
-        }
-    </style>
-	<script>
-    
-    
-    function calc(){
-        
-    var total = parseFloat(document.getElementById("bill").value);
-    var tip   = parseFloat(document.getElementById("tip").value);
-    var people = document.getElementById("people").value;
-        
-             var totalBill = total + (total/100)*tip;  //Full Bill with Tip 115
-             var totalTip =  (total/100)*tip;
-             var perPersonBill =  totalBill/people;  // 50
-             var perPersonTip = totalTip/people;
-        if(people>=1 ){
-            var display = document.getElementById("rtotal").value = perPersonBill.toFixed(2);
-            var display = document.getElementById("rtip").value = perPersonTip.toFixed(2);
-            
+<html>
+	<!--
+	CSE 190M, Summer 2012
+	This file is a tip calculator page using JavaScript.
+	-->
+<script>
+function calcTip() {
+	var subtotalElem = +document.getElementById('subtotal').value;
+	var tipElem = +document.getElementById('tip').value;
+	var totalElem = document.getElementById('total');
+	//var subtotal =
+	//var tip =
+	var total = subtotalElem*tipElem/100.0;
+	totalElem.innerHTML = '$' + total;
 
-        }
-    } 
-   
-    </script>
+}
 
-    
-    </head>
-<body>
+function onClickAlert() {
+	alert("This is so noob man!!!");
+}
 
-   
-    <div>
-         <H3>TIP CALCULATOR </H3><br><br>
-        
-     <img src="http://mumstudents.org/cs472/2019-03-RS/Lectures/js10/calc.jpg" alt="logo"> <br><br>
-    <label for="bill">  Total Bill : </label><br>
-    <input type="number" id="bill" placeholder="Enter total bill"> <br><br>
-    
-    <label for="tip">  Tip  : </label> <br>
-    <input type="number" id="tip" placeholder="15%"> <br><br>
-        
-    <label for="people">  Number of people : </label> <br>
-    <input type="number" id="people" placeholder=" "> <br><br>
-        
-     <label for="submit">  </label> <br>
-    <input type="submit" onclick="calc();" value="Check total Bill">  <br><br>
-    
-    <label for="rtotal">  Total Bill/ Person: </label> <br><br>
-    <input type="text" id="rtotal" placeholder=" "> <br><br>
-        
-    <label for="rtip">  Total tip/Person : </label> <br><br>
-    <input type="text" id="rtip" placeholder=" "> <br><br>
-    </div>
+</script>
+	<head>
+		<title>Tip Calculator</title>
+		<link href="tip.css" type="text/css" rel="stylesheet" />
+		<!-- <script src="tip.js" type="text/javascript"></script> -->
+	</head>
 
-</body>
+
+	<body>
+		<h1>
+			<img id="logo" src="calc.jpg" alt="++--**//" />
+			  Tip Calculator
+		</h1>
+
+		<div>
+			<label><input id="subtotal" type="text" /> $ Subtotal</label>
+		</div>
+
+		<div>
+			<label><input id="tip" type="text" /> % Tip</label>
+		</div>
+
+		<hr />
+
+		<div>
+			<h2>Your total:</h2>
+			<p id="total">$0.00</p>
+		</div>
+
+		<div>
+			<button id="btn"  onclick="calcTip();">Calculate Tip</button>
+		</div>
+
+		<div style="margin-top: 50px">
+			<hr/>
+			<hr/>
+			<div>
+				<button onclick="onClickAlert();">Show On CLick Alert</button>
+			</div>
+		</div>
+
+	</body>
 </html>
